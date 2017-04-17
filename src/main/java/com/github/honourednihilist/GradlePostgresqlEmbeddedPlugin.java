@@ -33,11 +33,12 @@ public class GradlePostgresqlEmbeddedPlugin implements Plugin<Project> {
 					extension.getDbName(),
 					extension.getUsername(),
 					extension.getPassword());
-
 			startTask.setPostgres(postgres);
-		});
 
-		project.getGradle().buildFinished(buildResult -> startTask.stop());
+			if (extension.isStopWhenBuildFinished()) {
+				project.getGradle().buildFinished(buildResult -> startTask.stop());
+			}
+		});
 	}
 
 	IVersion parseVersion(String version) {

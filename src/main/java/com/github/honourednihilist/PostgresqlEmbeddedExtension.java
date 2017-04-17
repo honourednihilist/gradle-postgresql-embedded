@@ -16,5 +16,6 @@ public class PostgresqlEmbeddedExtension {
 	private String username = "username";
 	private String password = "password";
 
+	private boolean stopWhenBuildFinished = true;
 	private int timeoutMillisBeforeStop = 0;
 }
