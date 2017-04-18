@@ -1,3 +1,7 @@
+plugins {
+    id 'com.gradle.plugin-publish' version '0.9.7'
+}
+
 apply plugin: 'java-gradle-plugin'
 apply plugin: 'maven'
 
@@ -34,6 +38,20 @@ repositories {
     mavenLocal()
     jcenter()
     mavenCentral()
+}
+
+pluginBundle {
+    website = 'https://github.com/honourednihilist/gradle-postgresql-embedded'
+    vcsUrl = 'https://github.com/honourednihilist/gradle-postgresql-embedded'
+
+    plugins {
+        gradlePostgresqlEmbedded {
+            id = 'com.github.honourednihilist.gradle-postgresql-embedded'
+            displayName = 'gradle-postgresql-embedded'
+            description = ' Gradle plugin to run embedded PostgreSQL server '
+            tags = ['embedded database', 'postgresql', 'postgres']
+        }
+    }
 }
 
 gradle.buildFinished {
