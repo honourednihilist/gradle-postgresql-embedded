@@ -29,7 +29,7 @@ gradlePlugin {
     plugins {
         gradlePostgresqlEmbedded {
             id = 'com.github.honourednihilist.gradle-postgresql-embedded'
-            implementationClass = 'com.github.honourednihilist.GradlePostgresqlEmbeddedPlugin'
+            implementationClass = 'com.github.honourednihilist.gradle.postgresql.embedded.GradlePostgresqlEmbeddedPlugin'
         }
     }
 }

@@ -1,4 +1,4 @@
-package com.github.honourednihilist;
+package com.github.honourednihilist.gradle.postgresql.embedded;
 
 import org.gradle.api.DefaultTask;
 import org.gradle.api.tasks.Internal;
@@ -21,7 +21,7 @@ public class StartPostgresTask extends DefaultTask {
 	public StartPostgresTask() {
 		super();
 		setGroup("Embedded PostgreSQL server");
-		setDescription("runs embedded PostgreSQL server.");
+		setDescription("Runs embedded PostgreSQL server.");
 	}
 
 	@TaskAction

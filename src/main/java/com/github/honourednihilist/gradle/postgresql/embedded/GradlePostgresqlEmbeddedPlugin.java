@@ -1,4 +1,4 @@
-package com.github.honourednihilist;
+package com.github.honourednihilist.gradle.postgresql.embedded;
 
 import de.flapdoodle.embed.process.distribution.IVersion;
 
