@@ -13,7 +13,7 @@ buildscript {
     }
   }
   dependencies {
-    classpath "gradle.plugin.com.github.honourednihilist:gradle-postgresql-embedded:0.1.0"
+    classpath "gradle.plugin.com.github.honourednihilist:gradle-postgresql-embedded:0.2.0"
   }
 }
 
@@ -23,7 +23,7 @@ apply plugin: "com.github.honourednihilist.gradle-postgresql-embedded"
 Build script snippet for new, incubating, plugin mechanism introduced in Gradle 2.1:
 ```groovy
 plugins {
-    id "com.github.honourednihilist.gradle-postgresql-embedded" version "0.1.0"
+    id "com.github.honourednihilist.gradle-postgresql-embedded" version "0.2.0"
 }
 ```
 
