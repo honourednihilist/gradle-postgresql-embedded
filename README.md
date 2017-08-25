@@ -39,15 +39,16 @@ These are all possible configuration options and its default values:
 
 ```groovy
 postgresEmbedded {
-	version = "V9_6_2"
+	version = "V9_6_3"
 	host = "localhost"
 	port = 0 // zero value means a random port
 	dbName = "embedded"
 	username = "username"
 	password = "password"
+	artifactStorePath = "~/.embedpostgresql" // where PostgreSQL distributions are stored after downloading, inside home directory by default 
 	stopWhenBuildFinished = true
 	timeoutMillisBeforeStop = 0
 }
 ```
 
-You can specify any supported version from [postgresql-embedded](https://github.com/yandex-qatools/postgresql-embedded/blob/postgresql-embedded-1.23/src/main/java/ru/yandex/qatools/embed/postgresql/distribution/Version.java), and a custom version of PostgreSQL as well.
+You can specify any supported version from [postgresql-embedded](https://github.com/yandex-qatools/postgresql-embedded/blob/postgresql-embedded-2.4/src/main/java/ru/yandex/qatools/embed/postgresql/distribution/Version.java), and a custom version of PostgreSQL as well.

@@ -7,8 +7,8 @@ apply plugin: 'maven'
 
 group = 'com.github.honourednihilist'
 
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
 
 compileJava {
     options.encoding = 'UTF-8'
@@ -19,8 +19,8 @@ compileTestJava {
 }
 
 dependencies {
-    compileOnly(group: 'org.projectlombok', name: 'lombok', version: '1.16.16')
-    compile(group: 'ru.yandex.qatools.embed', name: 'postgresql-embedded', version: '1.23')
+    compileOnly(group: 'org.projectlombok', name: 'lombok', version: '1.16.18')
+    compile(group: 'ru.yandex.qatools.embed', name: 'postgresql-embedded', version: '2.4')
 
     testCompile(group: 'junit', name: 'junit', version: '4.12')
 }
