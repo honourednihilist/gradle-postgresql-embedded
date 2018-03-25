@@ -19,8 +19,8 @@ compileTestJava {
 }
 
 dependencies {
-    compileOnly(group: 'org.projectlombok', name: 'lombok', version: '1.16.18')
-    compile(group: 'ru.yandex.qatools.embed', name: 'postgresql-embedded', version: '2.5')
+    compileOnly(group: 'org.projectlombok', name: 'lombok', version: '1.16.20')
+    compile(group: 'ru.yandex.qatools.embed', name: 'postgresql-embedded', version: '2.8')
 
     testCompile(group: 'junit', name: 'junit', version: '4.12')
 }

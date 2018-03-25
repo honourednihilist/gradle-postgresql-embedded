@@ -12,8 +12,8 @@ import static ru.yandex.qatools.embed.postgresql.distribution.Version.Main.PRODU
 import static ru.yandex.qatools.embed.postgresql.distribution.Version.Main.V10;
 import static ru.yandex.qatools.embed.postgresql.distribution.Version.Main.V9_5;
 import static ru.yandex.qatools.embed.postgresql.distribution.Version.Main.V9_6;
-import static ru.yandex.qatools.embed.postgresql.distribution.Version.V10_0;
-import static ru.yandex.qatools.embed.postgresql.distribution.Version.V9_6_5;
+import static ru.yandex.qatools.embed.postgresql.distribution.Version.V10_2;
+import static ru.yandex.qatools.embed.postgresql.distribution.Version.V9_6_7;
 
 public class GradlePostgresqlEmbeddedPlugin implements Plugin<Project> {
 
@@ -47,11 +47,11 @@ public class GradlePostgresqlEmbeddedPlugin implements Plugin<Project> {
 		versions.put(V9_6.name(), V9_6);
 		versions.put(V9_5.name(), V9_5);
 
-		versions.put(V10_0.name(), V10_0);
-		versions.put(V9_6_5.name(), V9_6_5);
+		versions.put(V10_2.name(), V10_2);
+		versions.put(V9_6_7.name(), V9_6_7);
 
-		versions.put(V10_0.asInDownloadPath(), V10_0);
-		versions.put(V9_6_5.asInDownloadPath(), V9_6_5);
+		versions.put(V10_2.asInDownloadPath(), V10_2);
+		versions.put(V9_6_7.asInDownloadPath(), V9_6_7);
 
 		return versions.getOrDefault(version, () -> version);
 	}

@@ -13,7 +13,7 @@ buildscript {
     }
   }
   dependencies {
-    classpath "gradle.plugin.com.github.honourednihilist:gradle-postgresql-embedded:0.3.0"
+    classpath "gradle.plugin.com.github.honourednihilist:gradle-postgresql-embedded:0.4.0"
   }
 }
 
@@ -23,7 +23,7 @@ apply plugin: "com.github.honourednihilist.gradle-postgresql-embedded"
 Build script snippet for new, incubating, plugin mechanism introduced in Gradle 2.1:
 ```groovy
 plugins {
-    id "com.github.honourednihilist.gradle-postgresql-embedded" version "0.3.0"
+    id "com.github.honourednihilist.gradle-postgresql-embedded" version "0.4.0"
 }
 ```
 
@@ -39,7 +39,7 @@ These are all possible configuration options and its default values:
 
 ```groovy
 postgresEmbedded {
-	version = "V10_0"
+	version = "V10"
 	host = "localhost"
 	port = 0 // zero value means a random port
 	dbName = "embedded"
@@ -51,4 +51,4 @@ postgresEmbedded {
 }
 ```
 
-You can specify any supported version from [postgresql-embedded](https://github.com/yandex-qatools/postgresql-embedded/blob/postgresql-embedded-2.5/src/main/java/ru/yandex/qatools/embed/postgresql/distribution/Version.java), and a custom version of PostgreSQL as well.
+You can specify any supported version from [postgresql-embedded](https://github.com/yandex-qatools/postgresql-embedded/blob/postgresql-embedded-2.8/src/main/java/ru/yandex/qatools/embed/postgresql/distribution/Version.java), and a custom version of PostgreSQL as well.
