@@ -53,7 +53,7 @@ postgresEmbedded {
 
 You can specify any supported version from [postgresql-embedded](https://github.com/yandex-qatools/postgresql-embedded/blob/postgresql-embedded-2.8/src/main/java/ru/yandex/qatools/embed/postgresql/distribution/Version.java), and a custom version of PostgreSQL as well.
 
-For example, you can use versions from [PostgreSQL Binaries](https://www.enterprisedb.com/download-postgresql-binaries) if you need a newer (or older) version of PostgreSQL than it is supported by this plugin at the moment.
+For example, you can use versions from [PostgreSQL Binaries](https://www.enterprisedb.com/download-postgresql-binaries) if you need a newer (or older) version of PostgreSQL which is not supported by this plugin at the moment.
 
 ```groovy
 postgresEmbedded {
